@@ -1,0 +1,114 @@
+header {
+  background: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  .burger-menu {
+    display: none;
+  }
+  .logo {
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    span {
+      color: var(--orange-color);
+    }
+  }
+  nav {
+    a {
+      color: white;
+      margin: 0 10px;
+      font-size: 19px;
+      &:hover {
+        color: var(--orange-color);
+      }
+    }
+  }
+  .icons {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      margin: 0 10px;
+      font-size: 25px;
+      cursor: pointer;
+      &:hover {
+        color: var(--orange-color);
+      }
+    }
+  }
+  form {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    width: 100%;
+    border-top: 1px solid #efefef;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.3s ease;
+    input {
+      height: 32px;
+      padding: 5px 15px;
+      border-radius: 7px;
+      flex: 32;
+    }
+    label {
+      flex: 1;
+      font-size: 26px;
+      margin-left: 10px;
+      cursor: pointer;
+      &:hover {
+        color: var(--orange-color);
+      }
+    }
+  }
+}
+
+/* width 991px and down */
+@media (max-width: 991px) {
+  header {
+    padding: 10px 17px;
+    .burger-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      border: 1px solid white;
+      border-radius: 7px;
+      padding: 4px;
+      cursor: pointer;
+      width: 50px;
+      height: 40px;
+    }
+    nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #333;
+      width: 100%;
+      padding: 21px 17px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: all 0.7s ease;
+      a {
+        display: block;
+        background: #222;
+        padding: 10px;
+        border-radius: 7px;
+        margin: 10px;
+      }
+    }
+  }
+}

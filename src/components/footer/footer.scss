@@ -1,0 +1,82 @@
+footer {
+  display: flex;
+  background: #333;
+  color: white;
+  padding: 21px;
+  .footer-item {
+    flex: 1;
+    h3 {
+      font-size: 27px;
+      margin-bottom: 17px;
+      border-bottom: 2px solid var(--orange-color);
+      width: max-content;
+    }
+    p {
+      width: 80%;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    ul.links {
+      li {
+        margin: 10px 0;
+        i {
+          padding-right: 7px;
+          color: var(--orange-color);
+        }
+        a {
+          color: white;
+          transition: color 0.5s ease;
+          text-transform: capitalize;
+          font-size: 19px;
+          &:hover {
+            color: var(--orange-color);
+          }
+        }
+      }
+    }
+    .contact {
+      div {
+        margin-bottom: 15px;
+        font-size: 17px;
+        i {
+          margin-right: 12px;
+          font-size: 21px;
+        }
+      }
+    }
+    .social-icons {
+      display: flex;
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        i {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+.credit {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 7px;
+  border-top: 1px solid rgb(201, 197, 197);
+  font-weight: 500;
+  font-size: 21px;
+}
+
+@media (max-width: 760px) {
+  footer {
+    flex-direction: column;
+    .footer-item {
+      margin-bottom: 40px;
+    }
+  }
+}

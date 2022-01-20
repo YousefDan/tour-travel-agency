@@ -1,0 +1,21 @@
+.packages {
+  padding: 21px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 21px;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 7px;
+  }
+}
+
+@media (max-width: 760px) {
+  .packages {
+    .container {
+      justify-content: center;
+    }
+  }
+}

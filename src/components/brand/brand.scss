@@ -1,0 +1,45 @@
+.brand {
+  margin: 40px 0;
+  padding: 21px 32px;
+  background-color: rgb(208, 239, 250);
+  .wrapper {
+    position: relative;
+    height: 100px;
+    .arrow {
+      position: absolute;
+      bottom: -21px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 142px;
+      padding: 0 5px;
+      font-size: 40px;
+      color: var(--orange-color);
+      cursor: pointer;
+      background-color: rgba(41, 40, 40, 0.2);
+      z-index: 4;
+      &.left {
+        left: -36px;
+      }
+      &.right {
+        right: -36px;
+      }
+    }
+    .brand-slider {
+      display: flex;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      transition: all 2s ease;
+      .brand-item {
+        width: 100px;
+        height: 100%;
+        margin-right: 60px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
